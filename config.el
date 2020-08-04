@@ -57,3 +57,4 @@
 ;; they are implemented.
 (after! lsp-python-ms
   (set-lsp-priority! 'mspyls 1))
+(map! :ne "M-/" #'comment-or-uncomment-region)
