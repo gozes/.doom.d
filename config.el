@@ -75,3 +75,4 @@
     (>defn :defn)
     (>defn- :defn)
     (match 1)))
+(projectile-discover-projects-in-search-path)
