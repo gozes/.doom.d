@@ -58,3 +58,20 @@
 (after! lsp-python-ms
   (set-lsp-priority! 'mspyls 1))
 (map! :ne "M-/" #'comment-or-uncomment-region)
+
+(after! clojure-mode
+  (define-clojure-indent
+    (PUT 2)
+    (POST 2)
+    (GET 2)
+    (PATCH 2)
+    (DELETE 2)
+    (OPTIONS 2)
+    (ANY 2)
+    (defroutes 'defun)
+    (rfn 2)
+    (let-routes 1)
+    (context 2)
+    (>defn :defn)
+    (>defn- :defn)
+    (match 1))
