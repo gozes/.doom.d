@@ -75,4 +75,8 @@
     (>defn :defn)
     (>defn- :defn)
     (match 1)))
+
 (projectile-discover-projects-in-search-path)
+
+(after! smartparens
+  (smartparens-global-strict-mode t))
