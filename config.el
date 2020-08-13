@@ -80,3 +80,7 @@
 
 (after! smartparens
   (smartparens-global-strict-mode t))
+
+(add-hook 'emacs-lisp-mode-hook #'evil-cleverparens-mode)
+
+(add-hook 'clojure-mode-hook #'evil-cleverparens-mode)
