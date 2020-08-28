@@ -87,5 +87,5 @@
 
 (add-hook 'yaml-mode-hook 'highlight-indent-guides-mode)
 
-(after highlight-indent-guides
+(after! highlight-indent-guides
        (setq highlight-indent-guides-method 'character))
