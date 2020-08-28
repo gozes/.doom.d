@@ -84,3 +84,5 @@
 (add-hook 'emacs-lisp-mode-hook #'evil-cleverparens-mode)
 
 (add-hook 'clojure-mode-hook #'evil-cleverparens-mode)
+
+(add-hook 'yaml-mode-hook 'highlight-indent-guides-mode)
